@@ -1,0 +1,104 @@
+
+
+.planodefundo {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    overflow: hidden; 
+    position: relative;
+}
+
+.carrossel {
+    display: flex;
+    width: 400vw;
+    height: 100vh;
+    transition: transform 0.6s ease-in-out;
+}
+
+.painel{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:left;
+    align-items: center;   
+    background-size: cover; 
+     background-position: center;
+
+}
+
+
+.quadrado {
+    width: 420px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 100px;
+    background-color: white;
+    padding-left: 30px;
+    position: relative;
+}
+
+.quadrado h1 {
+    padding: 30px 0px 50px 0px;
+    font-weight: 400;
+}
+
+.quadrado p {
+    text-align: justify;
+    padding-right: 30px;
+    font-weight: 300;
+
+}
+
+.quadrado h2{
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.quadrado a {
+    text-decoration: none;
+    color: red;
+}
+
+.painel:nth-child(1) {
+    background-image: url("src/imagem.png");
+}
+
+.painel:nth-child(2) {
+    background-image: url("src/imagem (1).png");
+}
+
+.painel:nth-child(3) {
+    background-image: url("src/imagem (2).png");
+}
+
+.painel:nth-child(4) {
+    background-image: url("src/imagem (3).png");
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0,3s;
+    z-index: 10;
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(255, 255, 255, 0,9);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
